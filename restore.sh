@@ -3,9 +3,8 @@ echo "Restoring your dot files from backup"
 
 echo "Restoring Atom.."
 
-# cp -r ~/.atom ~/OneDrive/dot-files/Atom
-#mv ~/.atom ~/Dropbox/Apps/Atom
-#ln -s ~/Dropbox/Apps/Atom ~/.atom
+mv ~/.atom ~/.atom.OLD
+ln -s ~/Dropbox/Apps/dotdot-sync/Atom ~/.atom
 
-echo "Finished backup"
+echo "Finished restore"
 exit
